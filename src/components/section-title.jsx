@@ -6,7 +6,11 @@ export const SectionTitle = props => {
 
   let descriptionSection = null;
   if (description) {
-    descriptionSection = <Grid item>{description}</Grid>;
+    descriptionSection = (
+      <Grid item>
+        <Typography>{description}</Typography>
+      </Grid>
+    );
   }
 
   return (
@@ -14,7 +18,7 @@ export const SectionTitle = props => {
       <Grid item>
         <Typography>{title}</Typography>
       </Grid>
-      <Typography>{descriptionSection}</Typography>
+      {descriptionSection}
     </Grid>
   );
 };

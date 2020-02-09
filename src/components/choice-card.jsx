@@ -17,7 +17,7 @@ export const ChoiceCard = props => {
   }
 
   return (
-    <Button onClick={onClick}>
+    <Button onClick={onClick} fullWidth>
       <Card>
         <Grid item xs={12}>
           <Img
@@ -28,8 +28,12 @@ export const ChoiceCard = props => {
         </Grid>
         <Grid container>
           <Grid container item xs={12} justify="space-between">
-            <Typography>{title}</Typography>
-            <Typography>{costLabel}</Typography>
+            <Grid item xs={6}>
+              <Typography>{title}</Typography>
+            </Grid>
+            <Grid item xs={6}>
+              <Typography>{costLabel}</Typography>
+            </Grid>
           </Grid>
           <Grid item xs={12}>
             <Typography>{description}</Typography>
