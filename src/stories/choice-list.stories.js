@@ -19,6 +19,7 @@ export const NoStyles = () => (
       ),
       action("Button was clicked")
     )}
+    columns={number("Number of Columns", 3)}
     title={text("Section Title", faker.lorem.words(2))}
     description={text("Description", faker.lorem.sentence())}
   />
