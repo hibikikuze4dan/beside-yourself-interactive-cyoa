@@ -1,16 +1,17 @@
-import { ADD_ARTICLE } from "../constants/action-types";
+import { fromJS } from "immutable";
+import { UPDATE_TAB } from "../constants/action-types";
+import text from "../../choices/script.json";
 
-const initialState = {
-  points: 50,
-  choices: [],
-  decisions: []
-};
+const initialState = fromJS({
+  choices: text,
+  currentTab: 0,
+  decisions: [],
+  points: 50
+});
 
 function rootReducer(state = initialState, action) {
-  if (action.type === ADD_ARTICLE) {
-    return Object.assign({}, state, {
-      articles: state.articles.concat(action.payload)
-    });
+  if (action.type === UPDATE_TAB) {
+    return state.set("currentTab", action.payload);
   }
   return state;
 }

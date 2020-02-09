@@ -1,0 +1,36 @@
+{
+  "title": "",
+  "description": ["", ""],
+  "sections": {
+    "summoning": {
+      "title": "Summoning Style",
+      "description": "",
+      "choices": {}
+    },
+    "desummoning": {
+      "title": "Desummoning style",
+      "description": "",
+      "choices": {}
+    },
+    "posse": {
+      "title": "Clone posse size",
+      "description": "",
+      "choices": {}
+    },
+    "independence": {
+      "title": "Clone Independence",
+      "description": "",
+      "choices": {}
+    },
+    "perks": {
+      "title": "Clone Perks",
+      "description": "",
+      "choices": {}
+    },
+    "drawbacks": {
+      "title": "Clone Drawbacks",
+      "description": "",
+      "choices": {}
+    }
+  }
+}

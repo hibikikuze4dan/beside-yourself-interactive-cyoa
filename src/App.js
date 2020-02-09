@@ -2,25 +2,14 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import logo from "./logo.svg";
 import "./App.css";
+import { NavigationTabs } from "./components/navigation-tabs";
 
 function App() {
   return (
     <Router>
-      <nav>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/corn">About</Link>
-          </li>
-          <li>
-            <Link to="/torn">Users</Link>
-          </li>
-        </ul>
-      </nav>
+      <NavigationTabs />
       <Switch>
-        <Route path="/corn">something</Route>
+        <Route path="/desummoning">something</Route>
         <Route path="/torn">
           <div className="App">
             <header className="App-header">
