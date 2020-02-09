@@ -1,7 +1,9 @@
 import { ADD_ARTICLE } from "../constants/action-types";
 
 const initialState = {
-  articles: []
+  points: 50,
+  choices: [],
+  decisions: []
 };
 
 function rootReducer(state = initialState, action) {
