@@ -4,33 +4,729 @@
   "sections": {
     "summoning": {
       "title": "Summoning Style",
-      "description": "",
-      "choices": {}
+      "description": "How do you bring your clones into the world?",
+      "choices": {
+        "at_will": {
+          "title": "At Will",
+          "description": "Just think of it, and they’ll pop into existence right next to you.",
+          "cost": 1,
+          "src": "https://i.imgur.com/T40SGNv.png",
+          "requirements": {
+            "exclude": null,
+            "include": null
+          }
+        },
+        "cumshot": {
+          "title": "Cumshot",
+          "description": "Whenever you orgasm that fluid will grow into a perfect copy of you. You get to choose which shot becomes a person.",
+          "cost": 0,
+          "src": "https://i.imgur.com/P1QQnSY.jpg",
+          "requirements": {
+            "exclude": null,
+            "include": null
+          }
+        },
+        "physical_trauma": {
+          "title": "Physical Trauma",
+          "description": "You have to get punched, slapped, or hit to spawn a clone. It has to be hard enough to hurt, but doesn’t need to break bones. The more painful the attack, the more clones it’ll create in one go.",
+          "cost": 0,
+          "src": "https://i.imgur.com/Og6GvAT.png",
+          "requirements": {
+            "exclude": null,
+            "include": null
+          }
+        },
+        "random": {
+          "title": "Random",
+          "description": "Clones just appear out of your body at random times. If you have a maximum number of clones, (say four clones) then the fifth clones will make the first desummon automatically.",
+          "cost": 0,
+          "src": "https://i.imgur.com/lWkpRX5.png",
+          "requirements": {
+            "exclude": null,
+            "include": null
+          }
+        },
+        "consumption": {
+          "title": "Consumption",
+          "description": "Whenever you eat a human’s worth of matter (About seventy kilos of food or water), a clone will be created. This is accumulated over your life time, and does not need to be in one sitting.",
+          "cost": 0,
+          "src": "https://i.imgur.com/835drrG.jpg",
+          "requirements": {
+            "exclude": null,
+            "include": null
+          }
+        },
+        "always_out": {
+          "title": "Always Out",
+          "description": "You don’t create your clones, they’re always there. You cannot take any desummon options, nor can you make more if those clones die.",
+          "cost": 0,
+          "src": "https://i.imgur.com/NL0MoDe.jpg",
+          "requirements": {
+            "exclude": null,
+            "include": null
+          }
+        }
+      }
     },
     "desummoning": {
       "title": "Desummoning style",
       "description": "",
-      "choices": {}
+      "choices": {
+        "anywhere": {
+          "title": "",
+          "description": "",
+          "cost": 0,
+          "src": "",
+          "requirements": {
+            "exclude": null,
+            "include": null
+          }
+        },
+        "touch": {
+          "title": "",
+          "description": "",
+          "cost": 0,
+          "src": "",
+          "requirements": {
+            "exclude": null,
+            "include": null
+          }
+        },
+        "orgasm": {
+          "title": "",
+          "description": "",
+          "cost": 0,
+          "src": "",
+          "requirements": {
+            "exclude": null,
+            "include": null
+          }
+        },
+        "screaming_match": {
+          "title": "",
+          "description": "",
+          "cost": 0,
+          "src": "",
+          "requirements": {
+            "exclude": null,
+            "include": null
+          }
+        },
+        "factory_reset": {
+          "title": "",
+          "description": "",
+          "cost": 0,
+          "src": "",
+          "requirements": {
+            "exclude": null,
+            "include": null
+          }
+        },
+        "murder": {
+          "title": "",
+          "description": "",
+          "cost": 0,
+          "src": "",
+          "requirements": {
+            "exclude": null,
+            "include": null
+          }
+        }
+      }
     },
     "posse": {
       "title": "Clone posse size",
       "description": "",
-      "choices": {}
+      "choices": {
+        "1": {
+          "title": "",
+          "description": "",
+          "cost": 0,
+          "src": "",
+          "requirements": {
+            "exclude": null,
+            "include": null
+          }
+        },
+        "2": {
+          "title": "",
+          "description": "",
+          "cost": 0,
+          "src": "",
+          "requirements": {
+            "exclude": null,
+            "include": null
+          }
+        },
+        "3": {
+          "title": "",
+          "description": "",
+          "cost": 0,
+          "src": "",
+          "requirements": {
+            "exclude": null,
+            "include": null
+          }
+        },
+        "4": {
+          "title": "",
+          "description": "",
+          "cost": 0,
+          "src": "",
+          "requirements": {
+            "exclude": null,
+            "include": null
+          }
+        },
+        "5": {
+          "title": "",
+          "description": "",
+          "cost": 0,
+          "src": "",
+          "requirements": {
+            "exclude": null,
+            "include": null
+          }
+        },
+        "6": {
+          "title": "",
+          "description": "",
+          "cost": 0,
+          "src": "",
+          "requirements": {
+            "exclude": null,
+            "include": null
+          }
+        },
+        "7": {
+          "title": "",
+          "description": "",
+          "cost": 0,
+          "src": "",
+          "requirements": {
+            "exclude": null,
+            "include": null
+          }
+        },
+        "8": {
+          "title": "",
+          "description": "",
+          "cost": 0,
+          "src": "",
+          "requirements": {
+            "exclude": null,
+            "include": null
+          }
+        },
+        "limitless": {
+          "title": "",
+          "description": "",
+          "cost": 0,
+          "src": "",
+          "requirements": {
+            "exclude": null,
+            "include": null
+          }
+        }
+      }
     },
     "independence": {
       "title": "Clone Independence",
       "description": "",
-      "choices": {}
+      "choices": {
+        "reliant": {
+          "title": "",
+          "description": "",
+          "cost": 0,
+          "src": "",
+          "requirements": {
+            "exclude": null,
+            "include": null
+          }
+        },
+        "semi-independence": {
+          "title": "",
+          "description": "",
+          "cost": 0,
+          "src": "",
+          "requirements": {
+            "exclude": null,
+            "include": null
+          }
+        },
+        "independant": {
+          "title": "",
+          "description": "",
+          "cost": 0,
+          "src": "",
+          "requirements": {
+            "exclude": null,
+            "include": null
+          }
+        }
+      }
     },
     "perks": {
       "title": "Clone Perks",
       "description": "",
-      "choices": {}
+      "choices": {
+        "shared_pleasure": {
+          "title": "",
+          "description": "",
+          "cost": 0,
+          "src": "",
+          "requirements": {
+            "exclude": null,
+            "include": null
+          }
+        },
+        "shared_sleep": {
+          "title": "",
+          "description": "",
+          "cost": 0,
+          "src": "",
+          "requirements": {
+            "exclude": null,
+            "include": null
+          }
+        },
+        "shared_nutrition": {
+          "title": "",
+          "description": "",
+          "cost": 0,
+          "src": "",
+          "requirements": {
+            "exclude": null,
+            "include": null
+          }
+        },
+        "shared_good_times": {
+          "title": "",
+          "description": "",
+          "cost": 0,
+          "src": "",
+          "requirements": {
+            "exclude": null,
+            "include": null
+          }
+        },
+        "passed_around": {
+          "title": "",
+          "description": "",
+          "cost": 0,
+          "src": "",
+          "requirements": {
+            "exclude": null,
+            "include": null
+          }
+        },
+        "palette_swap": {
+          "title": "",
+          "description": "",
+          "cost": 0,
+          "src": "",
+          "requirements": {
+            "exclude": null,
+            "include": null
+          }
+        },
+        "gender_neutral": {
+          "title": "",
+          "description": "",
+          "cost": 0,
+          "src": "",
+          "requirements": {
+            "exclude": null,
+            "include": null
+          }
+        },
+        "wrap_around": {
+          "title": "",
+          "description": "",
+          "cost": 0,
+          "src": "",
+          "requirements": {
+            "exclude": null,
+            "include": null
+          }
+        },
+        "telepathy": {
+          "title": "",
+          "description": "",
+          "cost": 0,
+          "src": "",
+          "requirements": {
+            "exclude": null,
+            "include": null
+          }
+        },
+        "hive_mind": {
+          "title": "",
+          "description": "",
+          "cost": 0,
+          "src": "",
+          "requirements": {
+            "exclude": null,
+            "include": null
+          }
+        },
+        "transplant": {
+          "title": "",
+          "description": "",
+          "cost": 0,
+          "src": "",
+          "requirements": {
+            "exclude": null,
+            "include": null
+          }
+        },
+        "three_is_a_crowd": {
+          "title": "",
+          "description": "",
+          "cost": 0,
+          "src": "",
+          "requirements": {
+            "exclude": null,
+            "include": null
+          }
+        },
+        "sampled": {
+          "title": "",
+          "description": "",
+          "cost": 0,
+          "src": "",
+          "requirements": {
+            "exclude": null,
+            "include": null
+          }
+        },
+        "merger": {
+          "title": "",
+          "description": "",
+          "cost": 0,
+          "src": "",
+          "requirements": {
+            "exclude": null,
+            "include": null
+          }
+        },
+        "fractals": {
+          "title": "",
+          "description": "",
+          "cost": 0,
+          "src": "",
+          "requirements": {
+            "exclude": null,
+            "include": null
+          }
+        },
+        "embiggen": {
+          "title": "",
+          "description": "",
+          "cost": 0,
+          "src": "",
+          "requirements": {
+            "exclude": null,
+            "include": null
+          }
+        },
+        "info_dump": {
+          "title": "",
+          "description": "",
+          "cost": 0,
+          "src": "",
+          "requirements": {
+            "exclude": null,
+            "include": null
+          }
+        },
+        "rewind_time": {
+          "title": "",
+          "description": "",
+          "cost": 0,
+          "src": "",
+          "requirements": {
+            "exclude": null,
+            "include": null
+          }
+        },
+        "frozen": {
+          "title": "",
+          "description": "",
+          "cost": 0,
+          "src": "",
+          "requirements": {
+            "exclude": null,
+            "include": null
+          }
+        },
+        "unborn": {
+          "title": "",
+          "description": "",
+          "cost": 0,
+          "src": "",
+          "requirements": {
+            "exclude": null,
+            "include": null
+          }
+        },
+        "leap_frog": {
+          "title": "",
+          "description": "",
+          "cost": 0,
+          "src": "",
+          "requirements": {
+            "exclude": null,
+            "include": null
+          }
+        },
+        "gainz": {
+          "title": "",
+          "description": "",
+          "cost": 0,
+          "src": "",
+          "requirements": {
+            "exclude": null,
+            "include": null
+          }
+        },
+        "out_of_town": {
+          "title": "",
+          "description": "",
+          "cost": 0,
+          "src": "",
+          "requirements": {
+            "exclude": null,
+            "include": null
+          }
+        },
+        "edible": {
+          "title": "",
+          "description": "",
+          "cost": 0,
+          "src": "",
+          "requirements": {
+            "exclude": null,
+            "include": null
+          }
+        },
+        "positive": {
+          "title": "",
+          "description": "",
+          "cost": 0,
+          "src": "",
+          "requirements": {
+            "exclude": null,
+            "include": null
+          }
+        },
+        "neutral": {
+          "title": "",
+          "description": "",
+          "cost": 0,
+          "src": "",
+          "requirements": {
+            "exclude": null,
+            "include": null
+          }
+        },
+        "negative": {
+          "title": "",
+          "description": "",
+          "cost": 0,
+          "src": "",
+          "requirements": {
+            "exclude": null,
+            "include": null
+          }
+        },
+        "wild": {
+          "title": "",
+          "description": "",
+          "cost": 0,
+          "src": "",
+          "requirements": {
+            "exclude": null,
+            "include": null
+          }
+        },
+        "plausible_deniability": {
+          "title": "",
+          "description": "",
+          "cost": 0,
+          "src": "",
+          "requirements": {
+            "exclude": null,
+            "include": null
+          }
+        },
+        "invisi-bill": {
+          "title": "",
+          "description": "",
+          "cost": 0,
+          "src": "",
+          "requirements": {
+            "exclude": null,
+            "include": null
+          }
+        },
+        "duplicate_glitch": {
+          "title": "",
+          "description": "",
+          "cost": 0,
+          "src": "",
+          "requirements": {
+            "exclude": null,
+            "include": null
+          }
+        },
+        "one_man_band": {
+          "title": "",
+          "description": "",
+          "cost": 0,
+          "src": "",
+          "requirements": {
+            "exclude": null,
+            "include": null
+          }
+        },
+        "relationship": {
+          "title": "",
+          "description": "",
+          "cost": 0,
+          "src": "",
+          "requirements": {
+            "exclude": null,
+            "include": null
+          }
+        },
+        "mimicry": {
+          "title": "",
+          "description": "",
+          "cost": 0,
+          "src": "",
+          "requirements": {
+            "exclude": null,
+            "include": null
+          }
+        },
+        "protect_the_queen": {
+          "title": "",
+          "description": "",
+          "cost": 0,
+          "src": "",
+          "requirements": {
+            "exclude": null,
+            "include": null
+          }
+        },
+        "progenitor": {
+          "title": "",
+          "description": "",
+          "cost": 0,
+          "src": "",
+          "requirements": {
+            "exclude": null,
+            "include": null
+          }
+        }
+      }
     },
     "drawbacks": {
       "title": "Clone Drawbacks",
       "description": "",
-      "choices": {}
+      "choices": {
+        "death_rattle": {
+          "title": "",
+          "description": "",
+          "cost": 0,
+          "src": "",
+          "requirements": {
+            "exclude": null,
+            "include": null
+          }
+        },
+        "zombie_legion": {
+          "title": "",
+          "description": "",
+          "cost": 0,
+          "src": "",
+          "requirements": {
+            "exclude": null,
+            "include": null
+          }
+        },
+        "friendly_stranger": {
+          "title": "",
+          "description": "",
+          "cost": 0,
+          "src": "",
+          "requirements": {
+            "exclude": null,
+            "include": null
+          }
+        },
+        "mirror_mirror": {
+          "title": "",
+          "description": "",
+          "cost": 0,
+          "src": "",
+          "requirements": {
+            "exclude": null,
+            "include": null
+          }
+        },
+        "tracker": {
+          "title": "",
+          "description": "",
+          "cost": 0,
+          "src": "",
+          "requirements": {
+            "exclude": null,
+            "include": null
+          }
+        },
+        "close_and_personal": {
+          "title": "",
+          "description": "",
+          "cost": 0,
+          "src": "",
+          "requirements": {
+            "exclude": null,
+            "include": null
+          }
+        },
+        "sterile": {
+          "title": "",
+          "description": "",
+          "cost": 0,
+          "src": "",
+          "requirements": {
+            "exclude": null,
+            "include": null
+          }
+        },
+        "green_grass": {
+          "title": "",
+          "description": "",
+          "cost": 0,
+          "src": "",
+          "requirements": {
+            "exclude": null,
+            "include": null
+          }
+        },
+        "that_is_rough_buddy": {
+          "title": "",
+          "description": "",
+          "cost": 0,
+          "src": "",
+          "requirements": {
+            "exclude": null,
+            "include": null
+          }
+        }
+      }
     }
   }
 }

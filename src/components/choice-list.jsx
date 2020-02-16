@@ -4,7 +4,16 @@ import { ChoiceCard } from "./choice-card";
 import { SectionTitle } from "./section-title";
 
 export const ChoiceList = props => {
-  const { title, description, choices, columns } = props;
+  const {
+    chooseOne,
+    decisions,
+    title,
+    description,
+    choices,
+    columns,
+    points,
+    onClick
+  } = props;
 
   return (
     <Fragment>
@@ -12,7 +21,13 @@ export const ChoiceList = props => {
       <GridList cellHeight="auto" cols={columns}>
         {choices.map((choice, index) => (
           <GridListTile key={`${title}-${index}`}>
-            <ChoiceCard {...choice} />
+            <ChoiceCard
+              item={choice}
+              decisions={decisions}
+              points={points}
+              onClick={onClick}
+              chooseOne={chooseOne}
+            />
           </GridListTile>
         ))}
       </GridList>

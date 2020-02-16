@@ -33,3 +33,17 @@ export const getSectionLinks = createSelector(
       link: keys[index]
     }))
 );
+
+export const getSummoningSection = createSelector(getSections, sections =>
+  sections.get("summoning")
+);
+
+export const getDecisions = createSelector(getState, state =>
+  state.get("decisions")
+);
+
+export const getSummoningDecision = createSelector(getDecisions, decisions =>
+  decisions.get("summoning")
+);
+
+export const getPoints = createSelector(getState, state => state.get("points"));
