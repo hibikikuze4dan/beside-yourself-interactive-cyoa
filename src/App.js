@@ -4,6 +4,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import { NavigationTabs } from "./components/navigation-tabs";
 import { Summoning } from "./sections/summoning";
+import { Desummoning } from "./sections/desummoning";
 
 function App() {
   return (
@@ -12,6 +13,9 @@ function App() {
       <Switch>
         <Route path="/summoning">
           <Summoning />
+        </Route>
+        <Route path="/desummoning">
+          <Desummoning />
         </Route>
         <Route path="/torn">
           <div className="App">

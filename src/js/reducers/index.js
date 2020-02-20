@@ -1,5 +1,9 @@
 import { fromJS } from "immutable";
-import { UPDATE_TAB, UPDATE_SUMMONING } from "../constants/action-types";
+import {
+  UPDATE_TAB,
+  UPDATE_SUMMONING,
+  UPDATE_DESUMMONING
+} from "../constants/action-types";
 import text from "../../choices/script.json";
 
 const defaultDecisions = {
@@ -25,6 +29,11 @@ function rootReducer(state = initialState, action) {
     const decisions = state.get("decisions");
     return state
       .set("decisions", decisions.set("summoning", action.payload.decisions))
+      .set("points", action.payload.points);
+  } else if (action.type === UPDATE_DESUMMONING) {
+    const decisions = state.get("decisions");
+    return state
+      .set("decisions", decisions.set("desummoning", action.payload.decisions))
       .set("points", action.payload.points);
   }
   return state;

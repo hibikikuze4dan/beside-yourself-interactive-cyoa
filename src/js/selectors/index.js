@@ -1,4 +1,5 @@
 import { createSelector } from "reselect";
+import { fromJS } from "immutable";
 
 const getState = state => state;
 
@@ -38,12 +39,38 @@ export const getSummoningSection = createSelector(getSections, sections =>
   sections.get("summoning")
 );
 
+export const getDesummoningSection = createSelector(getSections, sections =>
+  sections.get("desummoning")
+);
+
 export const getDecisions = createSelector(getState, state =>
   state.get("decisions")
 );
 
 export const getSummoningDecision = createSelector(getDecisions, decisions =>
   decisions.get("summoning")
+);
+
+export const getDesummoningDecision = createSelector(getDecisions, decisions =>
+  decisions.get("desummoning")
+);
+
+export const getSummoningComponentDecision = createSelector(
+  [getSummoningDecision, getDesummoningDecision],
+  (decisions, otherDecisions) =>
+    fromJS({
+      sectionDecisions: decisions,
+      otherDecisions
+    })
+);
+
+export const getDesummoningComponentDecisions = createSelector(
+  [getDesummoningDecision, getSummoningDecision],
+  (desummoning, summoning) =>
+    fromJS({
+      sectionDecisions: desummoning,
+      otherDecisions: summoning
+    })
 );
 
 export const getPoints = createSelector(getState, state => state.get("points"));

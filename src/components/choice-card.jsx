@@ -8,11 +8,12 @@ import {
 } from "@material-ui/core";
 import { withStyles } from "@material-ui/core/styles";
 import Img from "react-image";
+import { requirementsMet } from "../utils/functions";
 
 export const ChoiceCardBase = props => {
   const { classes, item, onClick, points, decisions, chooseOne } = props;
-
   const { cost, description, src, title, requirements } = item.toJS();
+  const { include, exclude } = requirements;
 
   let costLabel = null;
   let costSection = null;
@@ -27,22 +28,28 @@ export const ChoiceCardBase = props => {
     );
   }
 
-  const requirementsMet = true;
+  const sectionsDecisions = decisions.get("sectionDecisions");
+  const otherDecisions = decisions.get("otherDecisions");
+  let itemRequirementsMet = true;
+  if (include || exclude) {
+    itemRequirementsMet = requirementsMet(requirements, otherDecisions);
+  }
+
   const costCanBeMet = points >= cost;
 
-  const picked = decisions.indexOf(item);
+  const picked = sectionsDecisions.indexOf(item);
   let updatedDecisions = null;
-  if (picked !== -1) updatedDecisions = decisions.delete(picked);
+  if (picked !== -1) updatedDecisions = sectionsDecisions.delete(picked);
   else
     updatedDecisions = chooseOne
-      ? decisions.set(0, item)
-      : decisions.push(item);
+      ? sectionsDecisions.set(0, item)
+      : sectionsDecisions.push(item);
 
   return (
-    <Card classes={{ root: classes.root }}>
+    <Card classes={{ root: picked ? classes.picked : classes.root }}>
       <Button
         classes={{ root: `${classes.root}`, label: `${classes.label}` }}
-        disabled={!costCanBeMet || !requirementsMet}
+        disabled={!costCanBeMet || !itemRequirementsMet}
         onClick={() => onClick(updatedDecisions)}
         fullWidth
       >
@@ -78,6 +85,12 @@ export const ChoiceCardStyles = {
   },
   label: {
     height: "100%"
+  },
+  picked: {
+    height: "100%",
+    display: "block",
+    textTransform: "none",
+    backgroundColor: "green"
   }
 };
 
