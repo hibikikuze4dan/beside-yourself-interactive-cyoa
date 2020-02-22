@@ -1,5 +1,6 @@
 import { createSelector } from "reselect";
 import { fromJS } from "immutable";
+import { requirementsMet } from "../../utils/functions";
 
 const getState = state => state;
 
@@ -68,9 +69,24 @@ export const getDesummoningComponentDecisions = createSelector(
   [getDesummoningDecision, getSummoningDecision],
   (desummoning, summoning) =>
     fromJS({
-      sectionDecisions: desummoning,
+      sectionDecisions: desummoning.filter(value =>
+        requirementsMet(value.get("requirements").toJS(), summoning)
+      ),
       otherDecisions: summoning
     })
 );
 
 export const getPoints = createSelector(getState, state => state.get("points"));
+
+export const getCosts = createSelector(
+  [getSummoningDecision, getDesummoningDecision],
+  (summoning, desummoning) => {
+    const choices = [...summoning, ...desummoning];
+    return choices.reduce((acc, value) => acc + value.get("cost"), 0);
+  }
+);
+
+export const getCurrentPoints = createSelector(
+  [getPoints, getCosts],
+  (points, cost) => points - cost
+);

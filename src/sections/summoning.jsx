@@ -5,7 +5,7 @@ import { ChoiceList } from "../components/choice-list";
 import {
   getSummoningSection,
   getSummoningComponentDecision,
-  getPoints
+  getCurrentPoints
 } from "../js/selectors/index";
 import { updateSummoning } from "../js/actions/index";
 
@@ -33,7 +33,7 @@ export const SummoningBase = props => {
 const mapStateToProps = state => ({
   section: getSummoningSection(state),
   decisions: getSummoningComponentDecision(state),
-  points: getPoints(state)
+  points: getCurrentPoints(state)
 });
 
 const mapDispatchToProps = dispatch => ({

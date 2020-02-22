@@ -5,7 +5,7 @@ import { ChoiceList } from "../components/choice-list";
 import {
   getDesummoningSection,
   getDesummoningComponentDecisions,
-  getPoints
+  getCurrentPoints
 } from "../js/selectors/index";
 import { updateDesummoning } from "../js/actions/index";
 
@@ -33,7 +33,7 @@ export const DesummoningBase = props => {
 const mapStateToProps = state => ({
   section: getDesummoningSection(state),
   decisions: getDesummoningComponentDecisions(state),
-  points: getPoints(state)
+  points: getCurrentPoints(state)
 });
 
 const mapDispatchToProps = dispatch => ({

@@ -27,14 +27,16 @@ function rootReducer(state = initialState, action) {
     return state.set("currentTab", action.payload);
   } else if (action.type === UPDATE_SUMMONING) {
     const decisions = state.get("decisions");
-    return state
-      .set("decisions", decisions.set("summoning", action.payload.decisions))
-      .set("points", action.payload.points);
+    return state.set(
+      "decisions",
+      decisions.set("summoning", action.payload.decisions)
+    );
   } else if (action.type === UPDATE_DESUMMONING) {
     const decisions = state.get("decisions");
-    return state
-      .set("decisions", decisions.set("desummoning", action.payload.decisions))
-      .set("points", action.payload.points);
+    return state.set(
+      "decisions",
+      decisions.set("desummoning", action.payload.decisions)
+    );
   }
   return state;
 }
