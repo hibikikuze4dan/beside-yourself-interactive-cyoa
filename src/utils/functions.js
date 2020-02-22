@@ -1,5 +1,10 @@
+import { Map } from "immutable";
+
 export const requirementsMet = (requirements, decisions) => {
-  const { include, exclude } = requirements;
+  const jsRequirements = Map.isMap(requirements)
+    ? requirements.toJS()
+    : requirements;
+  const { include, exclude } = jsRequirements;
   const decisionNames = decisions.map(value => value.get("title"));
   const isIncluded = include
     ? include.every(string => decisionNames.includes(string))

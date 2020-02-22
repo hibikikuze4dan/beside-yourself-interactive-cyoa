@@ -44,6 +44,10 @@ export const getDesummoningSection = createSelector(getSections, sections =>
   sections.get("desummoning")
 );
 
+export const getPosseSection = createSelector(getSections, sections =>
+  sections.get("posse")
+);
+
 export const getDecisions = createSelector(getState, state =>
   state.get("decisions")
 );
@@ -54,6 +58,10 @@ export const getSummoningDecision = createSelector(getDecisions, decisions =>
 
 export const getDesummoningDecision = createSelector(getDecisions, decisions =>
   decisions.get("desummoning")
+);
+
+export const getPosseDecision = createSelector(getDecisions, decisions =>
+  decisions.get("posse")
 );
 
 export const getSummoningComponentDecision = createSelector(
@@ -70,7 +78,18 @@ export const getDesummoningComponentDecisions = createSelector(
   (desummoning, summoning) =>
     fromJS({
       sectionDecisions: desummoning.filter(value =>
-        requirementsMet(value.get("requirements").toJS(), summoning)
+        requirementsMet(value.get("requirements"), summoning)
+      ),
+      otherDecisions: summoning
+    })
+);
+
+export const getPosseComponentDecisions = createSelector(
+  [getPosseDecision, getSummoningDecision],
+  (posse, summoning) =>
+    fromJS({
+      sectionDecisions: posse.filter(value =>
+        requirementsMet(value.get("requirements"), summoning)
       ),
       otherDecisions: summoning
     })
@@ -79,9 +98,9 @@ export const getDesummoningComponentDecisions = createSelector(
 export const getPoints = createSelector(getState, state => state.get("points"));
 
 export const getCosts = createSelector(
-  [getSummoningDecision, getDesummoningDecision],
-  (summoning, desummoning) => {
-    const choices = [...summoning, ...desummoning];
+  [getSummoningDecision, getDesummoningDecision, getPosseDecision],
+  (summoning, desummoning, posse) => {
+    const choices = [...summoning, ...desummoning, ...posse];
     return choices.reduce((acc, value) => acc + value.get("cost"), 0);
   }
 );

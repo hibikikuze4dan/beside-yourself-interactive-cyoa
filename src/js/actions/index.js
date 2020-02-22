@@ -1,6 +1,7 @@
 import {
   UPDATE_SUMMONING,
   UPDATE_DESUMMONING,
+  UPDATE_POSSE,
   UPDATE_TAB
 } from "../constants/action-types";
 
@@ -19,6 +20,13 @@ export const updateSummoning = decisions => ({
 
 export const updateDesummoning = decisions => ({
   type: UPDATE_DESUMMONING,
+  payload: {
+    decisions
+  }
+});
+
+export const updatePosse = decisions => ({
+  type: UPDATE_POSSE,
   payload: {
     decisions
   }

@@ -35,8 +35,6 @@ export const ChoiceCardBase = props => {
     itemRequirementsMet = requirementsMet(requirements, otherDecisions);
   }
 
-  const costCanBeMet = points >= cost;
-
   const picked = sectionsDecisions.indexOf(item);
   let updatedDecisions = null;
   if (picked !== -1) updatedDecisions = sectionsDecisions.delete(picked);
@@ -44,6 +42,8 @@ export const ChoiceCardBase = props => {
     updatedDecisions = chooseOne
       ? sectionsDecisions.set(0, item)
       : sectionsDecisions.push(item);
+
+  const costCanBeMet = points >= cost || picked !== -1;
 
   return (
     <Card classes={{ root: picked ? classes.picked : classes.root }}>

@@ -3,15 +3,13 @@ import { connect } from "react-redux";
 import withWidth from "@material-ui/core/withWidth";
 import { ChoiceList } from "../components/choice-list";
 import {
-  getSummoningSection,
-  getSummoningComponentDecision,
+  getPosseSection,
+  getPosseComponentDecisions,
   getCurrentPoints
 } from "../js/selectors/index";
-import { updateSummoning } from "../js/actions/index";
+import { updatePosse } from "../js/actions/index";
 
-console.log(true);
-
-export const SummoningBase = props => {
+export const PosseBase = props => {
   const { section, decisions, points, width, onClick } = props;
 
   const title = section.get("title");
@@ -33,16 +31,16 @@ export const SummoningBase = props => {
 };
 
 const mapStateToProps = state => ({
-  section: getSummoningSection(state),
-  decisions: getSummoningComponentDecision(state),
+  section: getPosseSection(state),
+  decisions: getPosseComponentDecisions(state),
   points: getCurrentPoints(state)
 });
 
 const mapDispatchToProps = dispatch => ({
-  onClick: value => dispatch(updateSummoning(value))
+  onClick: value => dispatch(updatePosse(value))
 });
 
-export const Summoning = connect(
+export const Posse = connect(
   mapStateToProps,
   mapDispatchToProps
-)(withWidth()(SummoningBase));
+)(withWidth()(PosseBase));

@@ -19,10 +19,10 @@ export const ChoiceList = props => {
     <Fragment>
       <SectionTitle title={title} description={description} />
       <GridList cellHeight="auto" cols={columns}>
-        {choices.map((choice, index) => (
+        {choices.toArray().map((choice, index) => (
           <GridListTile key={`${title}-${index}`}>
             <ChoiceCard
-              item={choice}
+              item={choice[1]}
               decisions={decisions}
               points={points}
               onClick={onClick}
