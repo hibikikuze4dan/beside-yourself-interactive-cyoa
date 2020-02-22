@@ -3,7 +3,8 @@ import {
   UPDATE_TAB,
   UPDATE_SUMMONING,
   UPDATE_DESUMMONING,
-  UPDATE_POSSE
+  UPDATE_POSSE,
+  UPDATE_INDEPENDENCE
 } from "../constants/action-types";
 import text from "../../choices/script.json";
 
@@ -44,6 +45,12 @@ function rootReducer(state = initialState, action) {
     return state.set(
       "decisions",
       decisions.set("posse", action.payload.decisions)
+    );
+  } else if (type === UPDATE_INDEPENDENCE) {
+    const decisions = state.get("decisions");
+    return state.set(
+      "decisions",
+      decisions.set("independence", action.payload.decisions)
     );
   }
   return state;
