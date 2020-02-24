@@ -271,360 +271,360 @@
       "description": "",
       "choices": {
         "shared_pleasure": {
-          "title": "",
+          "title": "Shared Pleasure",
           "description": "",
-          "cost": 0,
-          "src": "",
+          "cost": 2,
+          "src": "https://i.imgur.com/3fY2A5w.jpg",
           "requirements": {
             "exclude": null,
             "include": null
           }
         },
         "shared_sleep": {
-          "title": "",
+          "title": "Shared Sleep",
           "description": "",
-          "cost": 0,
-          "src": "",
+          "cost": 4,
+          "src": "https://i.imgur.com/7cqr7hl.jpg",
           "requirements": {
             "exclude": null,
             "include": null
           }
         },
         "shared_nutrition": {
-          "title": "",
+          "title": "Shared Nutrition",
           "description": "",
-          "cost": 0,
-          "src": "",
+          "cost": 3,
+          "src": "https://i.imgur.com/9t7sFIL.jpg",
           "requirements": {
             "exclude": null,
             "include": null
           }
         },
         "shared_good_times": {
-          "title": "",
+          "title": "Shared Good Times",
           "description": "",
-          "cost": 0,
-          "src": "",
+          "cost": 4,
+          "src": "https://i.imgur.com/UjWQF2g.png",
           "requirements": {
             "exclude": null,
             "include": null
           }
         },
         "passed_around": {
-          "title": "",
+          "title": "Passed Around",
           "description": "",
-          "cost": 0,
-          "src": "",
+          "cost": 2,
+          "src": "https://i.imgur.com/5XdjVaF.jpg",
           "requirements": {
             "exclude": null,
             "include": null
           }
         },
         "palette_swap": {
-          "title": "",
+          "title": "Palette Swap",
           "description": "",
-          "cost": 0,
-          "src": "",
+          "cost": 2,
+          "src": "https://i.imgur.com/pu6jgyJ.jpg",
           "requirements": {
             "exclude": null,
             "include": null
           }
         },
         "gender_neutral": {
-          "title": "",
+          "title": "Gender Neutral",
           "description": "",
-          "cost": 0,
-          "src": "",
+          "cost": 3,
+          "src": "https://i.imgur.com/vxyd9VM.jpg",
           "requirements": {
             "exclude": null,
             "include": null
           }
         },
         "wrap_around": {
-          "title": "",
+          "title": "Wrap Around",
           "description": "",
-          "cost": 0,
-          "src": "",
+          "cost": 3,
+          "src": "https://i.imgur.com/OvAeBCz.jpg",
           "requirements": {
             "exclude": null,
-            "include": null
+            "include": ["Gender Neutral"]
           }
         },
         "telepathy": {
-          "title": "",
+          "title": "Telepathy",
           "description": "",
-          "cost": 0,
-          "src": "",
+          "cost": 3,
+          "src": "https://i.imgur.com/wzE8r2S.jpg",
           "requirements": {
             "exclude": null,
             "include": null
           }
         },
         "hive_mind": {
-          "title": "",
+          "title": "Hive Mind",
           "description": "",
-          "cost": 0,
-          "src": "",
+          "cost": 3,
+          "src": "https://i.imgur.com/sFGVtdL.png",
           "requirements": {
             "exclude": null,
-            "include": null
+            "include": ["Telepathy"]
           }
         },
         "transplant": {
-          "title": "",
+          "title": "Transplant",
           "description": "",
-          "cost": 0,
-          "src": "",
+          "cost": 3,
+          "src": "https://i.imgur.com/Rc5l217.jpg",
           "requirements": {
             "exclude": null,
             "include": null
           }
         },
         "three_is_a_crowd": {
-          "title": "",
+          "title": "Three's a Crowd",
           "description": "",
-          "cost": 0,
-          "src": "",
+          "cost": 5,
+          "src": "https://i.imgur.com/mgMD2AX.jpg",
           "requirements": {
             "exclude": null,
             "include": null
           }
         },
         "sampled": {
-          "title": "",
+          "title": "Sampled",
           "description": "",
-          "cost": 0,
-          "src": "",
+          "cost": 2,
+          "src": "https://i.imgur.com/EFa5KM0.jpg",
           "requirements": {
             "exclude": null,
-            "include": null
+            "include": ["Three's a Crowd"]
           }
         },
         "merger": {
-          "title": "",
+          "title": "Merger",
           "description": "",
-          "cost": 0,
-          "src": "",
+          "cost": 3,
+          "src": "https://i.imgur.com/xHBCFZi.png",
           "requirements": {
             "exclude": null,
-            "include": null
+            "include": ["Three's a Crowd"]
           }
         },
         "fractals": {
-          "title": "",
+          "title": "Fractals",
           "description": "",
-          "cost": 0,
-          "src": "",
+          "cost": 5,
+          "src": "https://i.imgur.com/wmfWEkz.png",
           "requirements": {
             "exclude": null,
             "include": null
           }
         },
         "embiggen": {
-          "title": "",
+          "title": "Embiggen",
           "description": "",
-          "cost": 0,
-          "src": "",
+          "cost": 3,
+          "src": "https://i.imgur.com/JpwZLs3.png",
           "requirements": {
             "exclude": null,
             "include": null
           }
         },
         "info_dump": {
-          "title": "",
+          "title": "Info Dump",
           "description": "",
-          "cost": 0,
-          "src": "",
+          "cost": 2,
+          "src": "https://i.imgur.com/dtdmbGN.png",
           "requirements": {
             "exclude": null,
             "include": null
           }
         },
         "rewind_time": {
-          "title": "",
+          "title": "Rewind Time",
           "description": "",
-          "cost": 0,
-          "src": "",
+          "cost": 4,
+          "src": "https://i.imgur.com/2Mtkea2.png",
           "requirements": {
             "exclude": null,
-            "include": null
+            "include": ["Info Dump"]
           }
         },
         "frozen": {
-          "title": "",
+          "title": "Frozen",
           "description": "",
-          "cost": 0,
-          "src": "",
+          "cost": 4,
+          "src": "https://i.imgur.com/KeNGfGC.jpg",
           "requirements": {
             "exclude": null,
             "include": null
           }
         },
         "unborn": {
-          "title": "",
+          "title": "Unborn",
           "description": "",
-          "cost": 0,
-          "src": "",
+          "cost": 5,
+          "src": "https://i.imgur.com/gbKjseW.jpg",
           "requirements": {
             "exclude": null,
             "include": null
           }
         },
         "leap_frog": {
-          "title": "",
+          "title": "Leap Frog",
           "description": "",
-          "cost": 0,
-          "src": "",
+          "cost": 5,
+          "src": "https://i.imgur.com/Sy29RxJ.jpg",
           "requirements": {
             "exclude": null,
             "include": null
           }
         },
         "gainz": {
-          "title": "",
+          "title": "Gainz",
           "description": "",
-          "cost": 0,
-          "src": "",
+          "cost": 4,
+          "src": "https://i.imgur.com/HwNn3Wy.jpg",
           "requirements": {
             "exclude": null,
             "include": null
           }
         },
         "out_of_town": {
-          "title": "",
+          "title": "Out of Town",
           "description": "",
-          "cost": 0,
-          "src": "",
+          "cost": 5,
+          "src": "https://i.imgur.com/LGLbJM3.jpg",
           "requirements": {
             "exclude": null,
             "include": null
           }
         },
         "edible": {
-          "title": "",
+          "title": "Edible",
           "description": "",
-          "cost": 0,
-          "src": "",
+          "cost": 2,
+          "src": "https://i.imgur.com/9hn3345.jpg",
           "requirements": {
             "exclude": null,
             "include": null
           }
         },
         "positive": {
-          "title": "",
+          "title": "Positive",
           "description": "",
-          "cost": 0,
-          "src": "",
+          "cost": 2,
+          "src": "https://i.imgur.com/KDjsDlI.jpg",
           "requirements": {
-            "exclude": null,
+            "exclude": ["Neutral", "Negative", "Wild"],
             "include": null
           }
         },
         "neutral": {
-          "title": "",
+          "title": "Neutral",
           "description": "",
-          "cost": 0,
-          "src": "",
+          "cost": 2,
+          "src": "https://i.imgur.com/RPUj2j9.png",
           "requirements": {
-            "exclude": null,
+            "exclude": ["Positive", "Negative", "Wild"],
             "include": null
           }
         },
         "negative": {
-          "title": "",
+          "title": "Negative",
           "description": "",
-          "cost": 0,
-          "src": "",
+          "cost": 2,
+          "src": "https://i.imgur.com/CIgdbG6.png",
           "requirements": {
-            "exclude": null,
+            "exclude": ["Positive", "Neutral", "Wild"],
             "include": null
           }
         },
         "wild": {
-          "title": "",
+          "title": "Wild",
           "description": "",
-          "cost": 0,
-          "src": "",
+          "cost": 2,
+          "src": "https://i.imgur.com/jHQdmuH.jpg",
           "requirements": {
-            "exclude": null,
+            "exclude": ["Positive", "Neutral", "Negative"],
             "include": null
           }
         },
         "plausible_deniability": {
-          "title": "",
+          "title": "Plausible Deniability",
           "description": "",
-          "cost": 0,
-          "src": "",
+          "cost": 2,
+          "src": "https://i.imgur.com/2iomTnY.jpg",
           "requirements": {
             "exclude": null,
             "include": null
           }
         },
         "invisi-bill": {
-          "title": "",
+          "title": "Invisi-bill",
           "description": "",
-          "cost": 0,
-          "src": "",
+          "cost": 5,
+          "src": "https://i.imgur.com/wBQVq2c.png",
           "requirements": {
             "exclude": null,
             "include": null
           }
         },
         "duplicate_glitch": {
-          "title": "",
+          "title": "Duplicate Glitch",
           "description": "",
-          "cost": 0,
-          "src": "",
+          "cost": 2,
+          "src": "https://i.imgur.com/VBenq37.jpg",
           "requirements": {
             "exclude": null,
             "include": null
           }
         },
         "one_man_band": {
-          "title": "",
+          "title": "One Man Band",
           "description": "",
-          "cost": 0,
-          "src": "",
+          "cost": 1,
+          "src": "https://i.imgur.com/QVrnzrN.jpg",
           "requirements": {
             "exclude": null,
             "include": null
           }
         },
         "relationship": {
-          "title": "",
+          "title": "Relationship",
           "description": "",
-          "cost": 0,
-          "src": "",
+          "cost": 3,
+          "src": "https://i.imgur.com/RBxQu0l.jpg",
           "requirements": {
             "exclude": null,
-            "include": null
+            "include": ["One Man Band"]
           }
         },
         "mimicry": {
-          "title": "",
+          "title": "Mimicry",
           "description": "",
-          "cost": 0,
-          "src": "",
+          "cost": 2,
+          "src": "https://i.imgur.com/DxCIZC7.jpg",
           "requirements": {
             "exclude": null,
-            "include": null
+            "include": ["One Man Band"]
           }
         },
         "protect_the_queen": {
-          "title": "",
+          "title": "Protect the Queen",
           "description": "",
-          "cost": 0,
-          "src": "",
+          "cost": 3,
+          "src": "https://i.imgur.com/w00C6ur.png",
           "requirements": {
             "exclude": null,
             "include": null
           }
         },
         "progenitor": {
-          "title": "",
+          "title": "Progenitor",
           "description": "",
-          "cost": 0,
-          "src": "",
+          "cost": 3,
+          "src": "https://i.imgur.com/UZKmFW7.jpg",
           "requirements": {
             "exclude": null,
             "include": null
