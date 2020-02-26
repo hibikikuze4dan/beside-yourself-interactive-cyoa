@@ -8,6 +8,7 @@ import { Summoning } from "./sections/summoning";
 import { Desummoning } from "./sections/desummoning";
 import { Posse } from "./sections/posse";
 import { Independence } from "./sections/independence";
+import { Perks } from "./sections/perks";
 
 function App() {
   return (
@@ -35,6 +36,9 @@ function App() {
           </Route>
           <Route path="/independence">
             <Independence />
+          </Route>
+          <Route path="/perks">
+            <Perks />
           </Route>
           <Route path="/torn">
             <div className="App">

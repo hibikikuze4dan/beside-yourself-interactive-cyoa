@@ -43,10 +43,12 @@ export const ChoiceCardBase = props => {
       ? sectionsDecisions.set(0, item)
       : sectionsDecisions.push(item);
 
-  const costCanBeMet = points >= cost || picked !== -1;
+  const isPicked = picked !== -1;
+
+  const costCanBeMet = points >= cost || isPicked;
 
   return (
-    <Card classes={{ root: picked ? classes.picked : classes.root }}>
+    <Card classes={{ root: isPicked ? classes.picked : classes.paper }}>
       <Button
         classes={{ root: `${classes.root}`, label: `${classes.label}` }}
         disabled={!costCanBeMet || !itemRequirementsMet}
@@ -83,6 +85,15 @@ export const ChoiceCardStyles = {
     display: "block",
     textTransform: "none"
   },
+  paper: {
+    height: "100%",
+    display: "block",
+    textTransform: "none",
+    backgroundColor: "green",
+    "&:hover": {
+      backgroundColor: "green"
+    }
+  },
   label: {
     height: "100%"
   },
@@ -90,7 +101,7 @@ export const ChoiceCardStyles = {
     height: "100%",
     display: "block",
     textTransform: "none",
-    backgroundColor: "green"
+    backgroundColor: "white"
   }
 };
 

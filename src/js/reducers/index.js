@@ -1,10 +1,11 @@
-import { fromJS } from "immutable";
+import { fromJS, isKeyed } from "immutable";
 import {
   UPDATE_TAB,
   UPDATE_SUMMONING,
   UPDATE_DESUMMONING,
   UPDATE_POSSE,
-  UPDATE_INDEPENDENCE
+  UPDATE_INDEPENDENCE,
+  UPDATE_PERKS
 } from "../constants/action-types";
 import text from "../../choices/script.json";
 
@@ -17,12 +18,22 @@ const defaultDecisions = {
   drawbacks: []
 };
 
-const initialState = fromJS({
-  choices: text,
-  currentTab: 0,
-  decisions: defaultDecisions,
-  points: 50
-});
+const initialState = fromJS(
+  {
+    choices: text,
+    currentTab: 0,
+    decisions: defaultDecisions,
+    points: 50
+  },
+  (key, value) => {
+    if (key === "choices") {
+      return value.toOrderedMap();
+    } else if (isKeyed(value)) {
+      return value.toMap();
+    }
+    return value.toList();
+  }
+);
 
 function rootReducer(state = initialState, action) {
   const { type } = action;
@@ -51,6 +62,12 @@ function rootReducer(state = initialState, action) {
     return state.set(
       "decisions",
       decisions.set("independence", action.payload.decisions)
+    );
+  } else if (type === UPDATE_PERKS) {
+    const decisions = state.get("decisions");
+    return state.set(
+      "decisions",
+      decisions.set("perks", action.payload.decisions)
     );
   }
   return state;

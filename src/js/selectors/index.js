@@ -52,6 +52,10 @@ export const getIndependenceSection = createSelector(getSections, sections =>
   sections.get("independence")
 );
 
+export const getPerksSection = createSelector(getSections, sections =>
+  sections.get("perks")
+);
+
 export const getDecisions = createSelector(getState, state =>
   state.get("decisions")
 );
@@ -70,6 +74,10 @@ export const getPosseDecision = createSelector(getDecisions, decisions =>
 
 export const getIndependenceDecision = createSelector(getDecisions, decisions =>
   decisions.get("independence")
+);
+
+export const getPerksDecisions = createSelector(getDecisions, decisions =>
+  decisions.get("perks")
 );
 
 export const getSummoningComponentDecision = createSelector(
@@ -112,6 +120,16 @@ export const getIndependeceComponentDecision = createSelector(
     })
 );
 
+export const getPerksComponentDecision = createSelector(
+  [getPerksDecisions],
+  decisions => {
+    return fromJS({
+      sectionDecisions: decisions,
+      otherDecisions: decisions
+    });
+  }
+);
+
 export const getPoints = createSelector(getState, state => state.get("points"));
 
 export const getCosts = createSelector(
@@ -119,10 +137,17 @@ export const getCosts = createSelector(
     getSummoningDecision,
     getDesummoningDecision,
     getPosseDecision,
-    getIndependenceDecision
+    getIndependenceDecision,
+    getPerksDecisions
   ],
-  (summoning, desummoning, posse, independence) => {
-    const choices = [...summoning, ...desummoning, ...posse, ...independence];
+  (summoning, desummoning, posse, independence, perks) => {
+    const choices = [
+      ...summoning,
+      ...desummoning,
+      ...posse,
+      ...independence,
+      ...perks
+    ];
     return choices.reduce((acc, value) => acc + value.get("cost"), 0);
   }
 );

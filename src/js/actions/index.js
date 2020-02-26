@@ -3,7 +3,8 @@ import {
   UPDATE_DESUMMONING,
   UPDATE_POSSE,
   UPDATE_TAB,
-  UPDATE_INDEPENDENCE
+  UPDATE_INDEPENDENCE,
+  UPDATE_PERKS
 } from "../constants/action-types";
 
 export function addArticle(payload) {
@@ -35,6 +36,13 @@ export const updatePosse = decisions => ({
 
 export const updateIndependence = decisions => ({
   type: UPDATE_INDEPENDENCE,
+  payload: {
+    decisions
+  }
+});
+
+export const updatePerks = decisions => ({
+  type: UPDATE_PERKS,
   payload: {
     decisions
   }
