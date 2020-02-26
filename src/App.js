@@ -16,7 +16,7 @@ function App() {
       <NavigationTabs />
       <Scrollbars
         autoHide
-        autoHideTimeout={2000}
+        autoHideTimeout={5000}
         autoHideDuration={200}
         autoHeight
         autoHeightMin={0}

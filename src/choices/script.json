@@ -634,93 +634,93 @@
     },
     "drawbacks": {
       "title": "Clone Drawbacks",
-      "description": "",
+      "description": "Something about your abilities is a bit off. What is it?",
       "choices": {
         "death_rattle": {
-          "title": "",
+          "title": "Death Rattle",
           "description": "",
-          "cost": 0,
-          "src": "",
+          "cost": -4,
+          "src": "https://i.imgur.com/pc4157Ih.png",
           "requirements": {
             "exclude": null,
             "include": null
           }
         },
         "zombie_legion": {
-          "title": "",
+          "title": "Zombie Legion",
           "description": "",
-          "cost": 0,
-          "src": "",
+          "cost": -5,
+          "src": "https://i.imgur.com/GQ2rWfx.jpg",
           "requirements": {
             "exclude": null,
             "include": null
           }
         },
         "friendly_stranger": {
-          "title": "",
+          "title": "Friendly Stranger",
           "description": "",
-          "cost": 0,
-          "src": "",
+          "cost": -2,
+          "src": "https://i.imgur.com/obnYsdC.png",
           "requirements": {
             "exclude": null,
-            "include": null
+            "include": ["Relationship"]
           }
         },
         "mirror_mirror": {
-          "title": "",
+          "title": "Mirror, Mirror",
           "description": "",
-          "cost": 0,
-          "src": "",
+          "cost": -3,
+          "src": "https://i.imgur.com/xXiw3Ow.jpg",
           "requirements": {
             "exclude": null,
             "include": null
           }
         },
         "tracker": {
-          "title": "",
+          "title": "Tracker",
           "description": "",
-          "cost": 0,
-          "src": "",
+          "cost": -3,
+          "src": "https://i.imgur.com/gDUcSGr.jpg",
           "requirements": {
             "exclude": null,
             "include": null
           }
         },
         "close_and_personal": {
-          "title": "",
+          "title": "Close and Personal",
           "description": "",
-          "cost": 0,
-          "src": "",
+          "cost": -4,
+          "src": "https://i.imgur.com/gj7EWwR.jpg",
           "requirements": {
             "exclude": null,
-            "include": null
+            "include": ["Murder"]
           }
         },
         "sterile": {
-          "title": "",
+          "title": "Sterile",
           "description": "",
-          "cost": 0,
-          "src": "",
+          "cost": -1,
+          "src": "https://i.imgur.com/nA88mc8.png",
           "requirements": {
             "exclude": null,
             "include": null
           }
         },
         "green_grass": {
-          "title": "",
+          "title": "Green Grass",
           "description": "",
-          "cost": 0,
-          "src": "",
+          "cost": -2,
+          "src": "https://i.imgur.com/MYsDd5l.jpg",
           "requirements": {
             "exclude": null,
             "include": null
           }
         },
         "that_is_rough_buddy": {
-          "title": "",
+          "title": "That's Rough Buddy",
           "description": "",
-          "cost": 0,
-          "src": "",
+          "cost": -4,
+          "src": "https://i.imgur.com/vZmYB8Z.jpg",
           "requirements": {
             "exclude": null,
             "include": null

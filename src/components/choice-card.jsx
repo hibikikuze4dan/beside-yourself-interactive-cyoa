@@ -8,7 +8,7 @@ import {
 } from "@material-ui/core";
 import { withStyles } from "@material-ui/core/styles";
 import Img from "react-image";
-import { requirementsMet } from "../utils/functions";
+import { requirementsMet, getRequiresString } from "../utils/functions";
 
 export const ChoiceCardBase = props => {
   const { classes, item, onClick, points, decisions, chooseOne } = props;
@@ -26,6 +26,11 @@ export const ChoiceCardBase = props => {
         <Typography>{costLabel}</Typography>
       </Grid>
     );
+  }
+
+  let requiresLabel = null;
+  if (include) {
+    requiresLabel = <Typography>{getRequiresString(requirements)}</Typography>;
   }
 
   const sectionsDecisions = decisions.get("sectionDecisions");
@@ -71,6 +76,7 @@ export const ChoiceCardBase = props => {
             {costSection}
           </Grid>
           <Grid item xs={12}>
+            {requiresLabel}
             <Typography>{description}</Typography>
           </Grid>
         </Grid>

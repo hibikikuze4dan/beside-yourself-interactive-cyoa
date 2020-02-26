@@ -14,3 +14,11 @@ export const requirementsMet = (requirements, decisions) => {
     : true;
   return isIncluded && isExcluded;
 };
+
+export const getRequiresString = requirements => {
+  const jsRequirements = Map.isMap(requirements)
+    ? requirements.toJS()
+    : requirements;
+  const { include } = jsRequirements;
+  return `Requires ${include[0]}`;
+};
