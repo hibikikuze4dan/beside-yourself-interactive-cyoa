@@ -68,16 +68,22 @@ export const ChoiceCardBase = props => {
             unloader={<CircularProgress />}
           />
         </Grid>
-        <Grid container>
+        <Grid container spacing={1}>
           <Grid container item xs={12} justify="space-between">
             <Grid item xs={titleXS}>
-              <Typography>{title}</Typography>
+              <Typography style={{ fontWeight: 'bold', fontStyle: 'italic' }}>{title}</Typography>
             </Grid>
             {costSection}
           </Grid>
           <Grid item xs={12}>
-            {requiresLabel}
-            <Typography>{description}</Typography>
+            <Grid container spacing={1}>
+              <Grid container justify="center" item>
+                {requiresLabel}
+              </Grid>
+              <Grid container justify="center" item>
+                <Typography>{description}</Typography>
+              </Grid>
+            </Grid>
           </Grid>
         </Grid>
       </Button>
