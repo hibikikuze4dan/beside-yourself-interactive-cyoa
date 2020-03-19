@@ -156,15 +156,17 @@ export const getCosts = createSelector(
     getDesummoningDecision,
     getPosseDecision,
     getIndependenceDecision,
-    getPerksDecisions
+    getPerksDecisions,
+    getDrawbacksDecisions,
   ],
-  (summoning, desummoning, posse, independence, perks) => {
+  (summoning, desummoning, posse, independence, perks, drawbacks) => {
     const choices = [
       ...summoning,
       ...desummoning,
       ...posse,
       ...independence,
-      ...perks
+      ...perks,
+      ...drawbacks
     ];
     return choices.reduce((acc, value) => acc + value.get("cost"), 0);
   }

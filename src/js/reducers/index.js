@@ -5,7 +5,8 @@ import {
   UPDATE_DESUMMONING,
   UPDATE_POSSE,
   UPDATE_INDEPENDENCE,
-  UPDATE_PERKS
+  UPDATE_PERKS,
+  UPDATE_DRAWBACKS
 } from "../constants/action-types";
 import text from "../../choices/script.json";
 
@@ -68,6 +69,12 @@ function rootReducer(state = initialState, action) {
     return state.set(
       "decisions",
       decisions.set("perks", action.payload.decisions)
+    );
+  } else if (type === UPDATE_DRAWBACKS) {
+    const decisions = state.get("decisions");
+    return state.set(
+      "decisions",
+      decisions.set("drawbacks", action.payload.decisions)
     );
   }
   return state;

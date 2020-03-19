@@ -18,7 +18,7 @@ export const PerksBase = props => {
 
   const cols = {
     xs: 1,
-    sm: 1,
+    sm: 2,
     md: 2,
     lg: 3,
     xl: 3,

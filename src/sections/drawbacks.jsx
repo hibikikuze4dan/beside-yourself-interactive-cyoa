@@ -7,7 +7,7 @@ import {
   getDrawbacksSection,
   getDrawbacksComponentDecision
 } from "../js/selectors/index";
-import { updatePerks } from "../js/actions/index";
+import { updateDrawbakcs } from "../js/actions/index";
 
 export const DrawbacksBase = props => {
   const { section, decisions, points, width, onClick } = props;
@@ -37,7 +37,7 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-  onClick: value => dispatch(updatePerks(value))
+  onClick: value => dispatch(updateDrawbakcs(value))
 });
 
 export const Drawbacks = connect(
