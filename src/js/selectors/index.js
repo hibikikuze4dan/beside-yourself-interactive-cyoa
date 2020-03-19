@@ -12,6 +12,10 @@ export const getChoices = createSelector(getState, state =>
   state.get("choices")
 );
 
+export const getDialogState = createSelector(getState, state =>
+  state.get("dialogOpen")
+);
+
 export const getSections = createSelector(getChoices, choices =>
   choices.get("sections")
 );

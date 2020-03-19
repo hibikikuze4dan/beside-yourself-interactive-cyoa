@@ -6,7 +6,8 @@ import {
   UPDATE_POSSE,
   UPDATE_INDEPENDENCE,
   UPDATE_PERKS,
-  UPDATE_DRAWBACKS
+  UPDATE_DRAWBACKS,
+  UPDATE_DIALOG
 } from "../constants/action-types";
 import text from "../../choices/script.json";
 
@@ -24,7 +25,8 @@ const initialState = fromJS(
     choices: text,
     currentTab: 0,
     decisions: defaultDecisions,
-    points: 50
+    points: 50,
+    dialogOpen: false,
   },
   (key, value) => {
     if (key === "choices") {
@@ -75,6 +77,11 @@ function rootReducer(state = initialState, action) {
     return state.set(
       "decisions",
       decisions.set("drawbacks", action.payload.decisions)
+    );
+  } else if (type === UPDATE_DIALOG) {
+    return state.set(
+      "dialogOpen",
+      action.payload,
     );
   }
   return state;

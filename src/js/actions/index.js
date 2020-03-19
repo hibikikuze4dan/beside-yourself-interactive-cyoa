@@ -5,7 +5,8 @@ import {
   UPDATE_TAB,
   UPDATE_INDEPENDENCE,
   UPDATE_PERKS,
-  UPDATE_DRAWBACKS
+  UPDATE_DRAWBACKS,
+  UPDATE_DIALOG
 } from "../constants/action-types";
 
 export function addArticle(payload) {
@@ -54,4 +55,9 @@ export const updateDrawbakcs = decisions => ({
   payload: {
     decisions
   }
+});
+
+export const updateDialog = open => ({
+  type: UPDATE_DIALOG,
+  payload: open,
 });
