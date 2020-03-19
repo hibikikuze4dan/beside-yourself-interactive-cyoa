@@ -13,7 +13,7 @@ export const NavigationTabsBase = props => {
   const { currentTab, sections, onChange, points } = props;
 
   return (
-    <Grid container>
+    <Grid container style={{ position: 'sticky' }}>
       <Grid item xs={1}>
         <Button fullWidth style={{ minWidth: "unset", height: "100%" }}>
           {points}

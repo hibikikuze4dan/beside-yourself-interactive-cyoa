@@ -3,26 +3,18 @@ import { connect } from "react-redux";
 import withWidth from "@material-ui/core/withWidth";
 import { ChoiceList } from "../components/choice-list";
 import {
-  getPerksSection,
-  getPerksComponentDecision,
-  getCurrentPoints
+  getCurrentPoints,
+  getDrawbacksSection,
+  getDrawbacksComponentDecision
 } from "../js/selectors/index";
 import { updatePerks } from "../js/actions/index";
 
-export const PerksBase = props => {
+export const DrawbacksBase = props => {
   const { section, decisions, points, width, onClick } = props;
 
   const title = section.get("title");
   const description = section.get("description");
   const choices = section.get("choices");
-
-  const cols = {
-    xs: 1,
-    sm: 1,
-    md: 2,
-    lg: 3,
-    xl: 3,
-  }
 
   return (
     <ChoiceList
@@ -31,7 +23,7 @@ export const PerksBase = props => {
       choices={choices}
       decisions={decisions}
       points={points}
-      columns={cols[width]}
+      columns={width === "xs" ? 1 : 3}
       onClick={onClick}
       chooseOne={false}
     />
@@ -39,8 +31,8 @@ export const PerksBase = props => {
 };
 
 const mapStateToProps = state => ({
-  section: getPerksSection(state),
-  decisions: getPerksComponentDecision(state),
+  section: getDrawbacksSection(state),
+  decisions: getDrawbacksComponentDecision(state),
   points: getCurrentPoints(state)
 });
 
@@ -48,7 +40,7 @@ const mapDispatchToProps = dispatch => ({
   onClick: value => dispatch(updatePerks(value))
 });
 
-export const Perks = connect(
+export const Drawbacks = connect(
   mapStateToProps,
   mapDispatchToProps
-)(withWidth()(PerksBase));
+)(withWidth()(DrawbacksBase));

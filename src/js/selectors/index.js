@@ -56,6 +56,10 @@ export const getPerksSection = createSelector(getSections, sections =>
   sections.get("perks")
 );
 
+export const getDrawbacksSection = createSelector(getSections, sections =>
+  sections.get("drawbacks")
+);
+
 export const getDecisions = createSelector(getState, state =>
   state.get("decisions")
 );
@@ -78,6 +82,10 @@ export const getIndependenceDecision = createSelector(getDecisions, decisions =>
 
 export const getPerksDecisions = createSelector(getDecisions, decisions =>
   decisions.get("perks")
+);
+
+export const getDrawbacksDecisions = createSelector(getDecisions, decisions =>
+  decisions.get("drawbacks")
 );
 
 export const getSummoningComponentDecision = createSelector(
@@ -126,6 +134,16 @@ export const getPerksComponentDecision = createSelector(
     return fromJS({
       sectionDecisions: decisions,
       otherDecisions: decisions
+    });
+  }
+);
+
+export const getDrawbacksComponentDecision = createSelector(
+  [getDrawbacksDecisions, getPerksDecisions, getDesummoningDecision],
+  (decisions, perksDecisions, desummoningDecisions) => {
+    return fromJS({
+      sectionDecisions: decisions,
+      otherDecisions: [...perksDecisions, ...desummoningDecisions],
     });
   }
 );
