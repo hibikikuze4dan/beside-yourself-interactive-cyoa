@@ -1,14 +1,19 @@
 import opening from "./opening";
-import b from "./desummoning";
-import c from "./drawbacks";
-import d from "./independence";
-import f from "./perks";
-import g from "./posse";
-import h from "./summoning";
+import desummoning from "./desummoning";
+import drawbacks from "./drawbacks";
+import independence from "./independence";
+import perks from "./perks";
+import posse from "./posse";
+import summoning from "./summoning";
 
 const data = {
-  ...opening,
-  sections: [h, b, g, d, f, c],
+  opening,
+  summoning,
+  desummoning,
+  posse,
+  independence,
+  perks,
+  drawbacks,
 };
 
 export default data;

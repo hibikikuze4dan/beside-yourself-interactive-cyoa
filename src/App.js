@@ -3,10 +3,13 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Scrollbars } from "react-custom-scrollbars";
 import "./App.css";
 import { Grid, Typography } from "@material-ui/core";
+import SectionsComponent from "./components/sections";
 
 function App() {
   return (
-    <Typography>a</Typography>
+    <Grid>
+      <SectionsComponent />
+    </Grid>
   );
 }
 
