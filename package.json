@@ -12,6 +12,7 @@
     "faker": "^4.1.0",
     "immutable": "^4.0.0-rc.12",
     "interweave": "^12.7.2",
+    "lodash": "^4.17.21",
     "react": "^16.12.0",
     "react-custom-scrollbars": "^4.2.1",
     "react-dom": "^16.12.0",

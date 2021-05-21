@@ -53,3 +53,14 @@ export const getLocationDescription = createSelector(
     return isArray ? description.join("") : `${description}`;
   }
 );
+
+export const getLocationChoices = createSelector(
+  getLocation,
+  getData,
+  (location, data) => data[location]?.choices ?? {}
+);
+
+export const getLocationChoicesArray = createSelector(
+  getLocationChoices,
+  (choices) => Object.values(choices)
+);

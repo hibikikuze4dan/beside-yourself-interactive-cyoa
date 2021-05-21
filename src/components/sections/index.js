@@ -4,7 +4,7 @@ import { useSelector } from "react-redux";
 import { HashRouter, Redirect, Route, Switch } from "react-router-dom";
 import { getLocation, getPotentialRedirectLocation } from "../../js/selectors";
 import ArrowNavigationComponent from "../arrow-navigation";
-import OpenerComponent from "../opener";
+import LayoutComponent from "./LayoutComponent";
 
 const SectionsComponent = () => {
   // Delete line below
@@ -19,7 +19,7 @@ const SectionsComponent = () => {
           <Route
             path={`/${location}`}
             render={() => {
-              return <OpenerComponent />;
+              return <LayoutComponent />;
             }}
           />
           <Route exact path="/">
