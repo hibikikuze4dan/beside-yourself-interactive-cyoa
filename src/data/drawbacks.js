@@ -8,6 +8,7 @@ const drawbacks = {
       description:
         "If one of your clones die, you'll feel all the sensations leading up to that death. For an extra three points, this'll also happen with every desummon.",
       cost: -4,
+      secondPurchase: -7,
       src: "https://i.imgur.com/pc4157Ih.png",
       requirements: {
         exclude: null,
@@ -52,6 +53,7 @@ const drawbacks = {
       description:
         "Your clones cannot be more than 50km from you, or else they will be pushed towards you by an invisible force. For an extra point, the range  is reduced to 5km.",
       cost: -3,
+      secondPurchase: -4,
       src: "https://i.imgur.com/gDUcSGr.jpg",
       requirements: {
         exclude: null,
