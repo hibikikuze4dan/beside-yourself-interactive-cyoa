@@ -1,6 +1,7 @@
 const summoning = {
   title: "Summoning Style",
   description: "How do you bring your clones into the world?",
+  multi: false,
   choices: {
     at_will: {
       title: "At Will",

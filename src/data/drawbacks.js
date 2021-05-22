@@ -1,6 +1,7 @@
 const drawbacks = {
   title: "Clone Drawbacks",
   description: "Something about your abilities is a bit off. What is it?",
+  multi: true,
   choices: {
     death_rattle: {
       title: "Death Rattle",

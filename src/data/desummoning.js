@@ -1,6 +1,7 @@
 const desummoning = {
   title: "Desummoning Style",
   description: "How do you get rid of the clones once you’ve made them?",
+  multi: false,
   choices: {
     anywhere: {
       title: "Anywhere",
@@ -9,7 +10,7 @@ const desummoning = {
       cost: 1,
       src: "https://i.imgur.com/mkA57Km.png",
       requirements: {
-        exclude: null,
+        exclude: ["Always Out"],
         include: null,
       },
     },
@@ -19,7 +20,7 @@ const desummoning = {
       cost: 0,
       src: "https://i.imgur.com/p5dN2zZ.jpg",
       requirements: {
-        exclude: null,
+        exclude: ["Always Out"],
         include: null,
       },
     },
@@ -29,7 +30,7 @@ const desummoning = {
       cost: 0,
       src: "https://i.imgur.com/i0W5ljI.png",
       requirements: {
-        exclude: null,
+        exclude: ["Always Out"],
         include: null,
       },
     },
@@ -40,7 +41,7 @@ const desummoning = {
       cost: 0,
       src: "https://i.imgur.com/QTEyalk.jpg",
       requirements: {
-        exclude: null,
+        exclude: ["Always Out"],
         include: null,
       },
     },
@@ -51,7 +52,7 @@ const desummoning = {
       cost: 0,
       src: "https://i.imgur.com/n2v2rV1.jpg",
       requirements: {
-        exclude: null,
+        exclude: ["Always Out"],
         include: null,
       },
     },
@@ -63,7 +64,7 @@ const desummoning = {
       src: "https://i.imgur.com/fsY4Psl.jpg",
       requirements: {
         exclude: null,
-        include: ["Always Out"],
+        include: null,
       },
     },
   },

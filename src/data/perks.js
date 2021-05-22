@@ -1,6 +1,7 @@
 const perks = {
   title: "Clone Perks",
   description: "Your cloning abilities are stronger than you think.",
+  multi: true,
   choices: {
     shared_pleasure: {
       title: "Shared Pleasure",

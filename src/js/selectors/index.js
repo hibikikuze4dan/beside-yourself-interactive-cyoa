@@ -1,5 +1,6 @@
 import { createSelector } from "reselect";
 import { fromJS } from "immutable";
+import { omit } from "lodash-es";
 
 const getState = (state) => state;
 
@@ -63,4 +64,55 @@ export const getLocationChoices = createSelector(
 export const getLocationChoicesArray = createSelector(
   getLocationChoices,
   (choices) => Object.values(choices)
+);
+
+export const getLocationMulti = createSelector(
+  getLocation,
+  getData,
+  (location, data) => !!data[location]?.multi
+);
+
+export const getSelectedChoicesObject = createSelector(getState, (state) =>
+  omit(state, "data", "location")
+);
+
+export const getSelectedChoicesTitles = createSelector(
+  getSelectedChoicesObject,
+  (choices) =>
+    Object.values(choices).reduce((acc, choicesArray) => {
+      choicesArray.forEach((choice) => acc.push(choice.title));
+      return acc;
+    }, [])
+);
+
+export const getSelectedChoicesForLocation = createSelector(
+  getLocation,
+  getState,
+  (location, state) => [...state[location]]
+);
+
+export const getSelectedChoicesForLocationTitles = createSelector(
+  getSelectedChoicesForLocation,
+  (choices) => [...choices.map((choice) => choice.title)]
+);
+
+export const isChoicePicked = createSelector(
+  getSelectedChoicesForLocationTitles,
+  (titles) => (title) => titles.includes(title)
+);
+
+export const areRequirementsMet = createSelector(
+  getSelectedChoicesTitles,
+  (titles) => (requirements) => {
+    const include = requirements?.include;
+    const exclude = requirements?.exclude;
+    if (!include && !exclude) return true;
+    const includeMet = include
+      ? include.every((inc) => titles.includes(inc))
+      : false;
+    const excludeMet = exclude
+      ? exclude.every((ex) => !titles.includes(ex))
+      : false;
+    return includeMet || excludeMet;
+  }
 );

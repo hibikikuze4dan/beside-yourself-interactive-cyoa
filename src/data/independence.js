@@ -1,6 +1,7 @@
 const independence = {
   title: "Clone Independence",
   description: "How independent are these clones from you, their creator?",
+  multi: false,
   choices: {
     reliant: {
       title: "Reliant",
