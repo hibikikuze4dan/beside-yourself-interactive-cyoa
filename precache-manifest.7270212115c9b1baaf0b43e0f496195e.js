@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8bc39c84c70f32df0f17ececf12a82a4",
+    "revision": "8f4afa8d6494fd6c81332549e9d26521",
     "url": "/beside-yourself-interactive-cyoa/index.html"
   },
   {
-    "revision": "c5414a6c34c4ee231b21",
+    "revision": "58e870b5bcffe6f28e29",
     "url": "/beside-yourself-interactive-cyoa/static/css/main.7f904051.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/beside-yourself-interactive-cyoa/static/js/2.ab3707a0.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "c5414a6c34c4ee231b21",
-    "url": "/beside-yourself-interactive-cyoa/static/js/main.25c3928c.chunk.js"
+    "revision": "58e870b5bcffe6f28e29",
+    "url": "/beside-yourself-interactive-cyoa/static/js/main.59ec666c.chunk.js"
   },
   {
     "revision": "21f5dd01bbc8ad6ffb7d",

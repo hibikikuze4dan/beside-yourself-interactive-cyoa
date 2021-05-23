@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/beside-yourself-interactive-cyoa/static/css/main.7f904051.chunk.css",
-    "main.js": "/beside-yourself-interactive-cyoa/static/js/main.25c3928c.chunk.js",
-    "main.js.map": "/beside-yourself-interactive-cyoa/static/js/main.25c3928c.chunk.js.map",
+    "main.js": "/beside-yourself-interactive-cyoa/static/js/main.59ec666c.chunk.js",
+    "main.js.map": "/beside-yourself-interactive-cyoa/static/js/main.59ec666c.chunk.js.map",
     "runtime-main.js": "/beside-yourself-interactive-cyoa/static/js/runtime-main.9ed86d43.js",
     "runtime-main.js.map": "/beside-yourself-interactive-cyoa/static/js/runtime-main.9ed86d43.js.map",
     "static/js/2.ab3707a0.chunk.js": "/beside-yourself-interactive-cyoa/static/js/2.ab3707a0.chunk.js",
     "static/js/2.ab3707a0.chunk.js.map": "/beside-yourself-interactive-cyoa/static/js/2.ab3707a0.chunk.js.map",
     "index.html": "/beside-yourself-interactive-cyoa/index.html",
-    "precache-manifest.6d9a76cee744fdee2dc1e4ff52823909.js": "/beside-yourself-interactive-cyoa/precache-manifest.6d9a76cee744fdee2dc1e4ff52823909.js",
+    "precache-manifest.7270212115c9b1baaf0b43e0f496195e.js": "/beside-yourself-interactive-cyoa/precache-manifest.7270212115c9b1baaf0b43e0f496195e.js",
     "service-worker.js": "/beside-yourself-interactive-cyoa/service-worker.js",
     "static/css/main.7f904051.chunk.css.map": "/beside-yourself-interactive-cyoa/static/css/main.7f904051.chunk.css.map",
     "static/js/2.ab3707a0.chunk.js.LICENSE.txt": "/beside-yourself-interactive-cyoa/static/js/2.ab3707a0.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.9ed86d43.js",
     "static/js/2.ab3707a0.chunk.js",
     "static/css/main.7f904051.chunk.css",
-    "static/js/main.25c3928c.chunk.js"
+    "static/js/main.59ec666c.chunk.js"
   ]
 }
