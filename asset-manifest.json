@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/beside-yourself/static/css/main.7f904051.chunk.css",
-    "main.js": "/beside-yourself/static/js/main.056948b3.chunk.js",
-    "main.js.map": "/beside-yourself/static/js/main.056948b3.chunk.js.map",
-    "runtime-main.js": "/beside-yourself/static/js/runtime-main.c0c9757f.js",
-    "runtime-main.js.map": "/beside-yourself/static/js/runtime-main.c0c9757f.js.map",
-    "static/js/2.f7579e89.chunk.js": "/beside-yourself/static/js/2.f7579e89.chunk.js",
-    "static/js/2.f7579e89.chunk.js.map": "/beside-yourself/static/js/2.f7579e89.chunk.js.map",
-    "index.html": "/beside-yourself/index.html",
-    "precache-manifest.5a2bdb138753b7dcbbf200d1210adf95.js": "/beside-yourself/precache-manifest.5a2bdb138753b7dcbbf200d1210adf95.js",
-    "service-worker.js": "/beside-yourself/service-worker.js",
-    "static/css/main.7f904051.chunk.css.map": "/beside-yourself/static/css/main.7f904051.chunk.css.map",
-    "static/js/2.f7579e89.chunk.js.LICENSE.txt": "/beside-yourself/static/js/2.f7579e89.chunk.js.LICENSE.txt"
+    "main.css": "/beside-yourself-interactive-cyoa/static/css/main.7f904051.chunk.css",
+    "main.js": "/beside-yourself-interactive-cyoa/static/js/main.5ff4c549.chunk.js",
+    "main.js.map": "/beside-yourself-interactive-cyoa/static/js/main.5ff4c549.chunk.js.map",
+    "runtime-main.js": "/beside-yourself-interactive-cyoa/static/js/runtime-main.9ed86d43.js",
+    "runtime-main.js.map": "/beside-yourself-interactive-cyoa/static/js/runtime-main.9ed86d43.js.map",
+    "static/js/2.f7579e89.chunk.js": "/beside-yourself-interactive-cyoa/static/js/2.f7579e89.chunk.js",
+    "static/js/2.f7579e89.chunk.js.map": "/beside-yourself-interactive-cyoa/static/js/2.f7579e89.chunk.js.map",
+    "index.html": "/beside-yourself-interactive-cyoa/index.html",
+    "precache-manifest.6a504fa9c134f9db1a078bfa3a2ead1f.js": "/beside-yourself-interactive-cyoa/precache-manifest.6a504fa9c134f9db1a078bfa3a2ead1f.js",
+    "service-worker.js": "/beside-yourself-interactive-cyoa/service-worker.js",
+    "static/css/main.7f904051.chunk.css.map": "/beside-yourself-interactive-cyoa/static/css/main.7f904051.chunk.css.map",
+    "static/js/2.f7579e89.chunk.js.LICENSE.txt": "/beside-yourself-interactive-cyoa/static/js/2.f7579e89.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.c0c9757f.js",
+    "static/js/runtime-main.9ed86d43.js",
     "static/js/2.f7579e89.chunk.js",
     "static/css/main.7f904051.chunk.css",
-    "static/js/main.056948b3.chunk.js"
+    "static/js/main.5ff4c549.chunk.js"
   ]
 }
