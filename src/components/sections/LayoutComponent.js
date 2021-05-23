@@ -5,7 +5,11 @@ import OpenerComponent from "../opener";
 
 const LayoutComponent = () => {
   return (
-    <Grid container>
+    <Grid
+      container
+      spacing={4}
+      style={{ padding: "0 16px", overflow: "hidden" }}
+    >
       <Grid item xs={12}>
         <OpenerComponent />
       </Grid>

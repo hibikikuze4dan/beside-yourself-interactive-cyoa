@@ -6,6 +6,11 @@ export const dataSlice = createSlice({
   initialState: {
     data,
     location: window.location.href.split("/").pop() ?? "",
+    saveTitle: "",
+    modals: {
+      breakdown: false,
+      save: false,
+    },
     summoning: [],
     desummoning: [],
     posse: [],
@@ -44,6 +49,19 @@ export const dataSlice = createSlice({
             ]
           : [...choices.filter((choice) => choice.title !== title)];
     },
+    toggleModal: (state, action) => {
+      state.modals = {
+        ...state.modals,
+        [action.payload]: !state.modals[action.payload],
+      };
+    },
+    loadSave: (state, action) => {
+      state = { ...state, ...action.payload };
+      return state;
+    },
+    updateSaveTitle: (state, action) => {
+      state.saveTitle = action.payload;
+    },
   },
 });
 
@@ -52,6 +70,9 @@ export const {
   updateMultiChoice,
   updateSingleChoice,
   updateExtraChoice,
+  toggleModal,
+  loadSave,
+  updateSaveTitle,
 } = dataSlice.actions;
 
 export default dataSlice.reducer;

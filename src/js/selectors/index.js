@@ -1,6 +1,6 @@
 import { createSelector } from "reselect";
 import { fromJS } from "immutable";
-import { omit } from "lodash-es";
+import { omit, sum } from "lodash-es";
 
 const getState = (state) => state;
 
@@ -14,6 +14,17 @@ export const getData = createSelector(getState, (state) => ({ ...state.data }));
 export const getRoutes = createSelector(getData, (data) => {
   return Object.keys(data);
 });
+
+export const getSaveTitle = createSelector(
+  getState,
+  (state) => `${state.saveTitle}`
+);
+
+export const getModals = createSelector(getState, (state) => state.modals);
+
+export const isModalOpen = createSelector(getModals, (modals) => (modalName) =>
+  modals[modalName]
+);
 
 export const getArrowRoutes = createSelector(
   getLocation,
@@ -73,7 +84,21 @@ export const getLocationMulti = createSelector(
 );
 
 export const getSelectedChoicesObject = createSelector(getState, (state) =>
-  omit(state, "data", "location")
+  omit(state, "data", "location", "modals", "saveTitle")
+);
+
+export const getDataForSaving = createSelector(getState, (state) =>
+  omit(state, "data", "location", "modals")
+);
+
+export const getSelectedChoicesForBreakdown = createSelector(
+  getSelectedChoicesObject,
+  getData,
+  (choices, data) =>
+    Object.entries(choices).map(([key, arr]) => ({
+      title: data[key].title,
+      choices: arr.map((c) => c.title),
+    }))
 );
 
 export const getSelectedChoicesTitles = createSelector(
@@ -85,6 +110,19 @@ export const getSelectedChoicesTitles = createSelector(
     }, [])
 );
 
+export const getSelectedChoicesCosts = createSelector(
+  getSelectedChoicesObject,
+  (choices) =>
+    Object.values(choices).reduce((acc, choicesArray) => {
+      choicesArray.forEach((choice) => acc.push(choice.cost));
+      return acc;
+    }, [])
+);
+
+export const getCurrentPoints = createSelector(
+  getSelectedChoicesCosts,
+  (costs) => 50 - sum(costs)
+);
 export const getSelectedChoicesForLocation = createSelector(
   getLocation,
   getState,

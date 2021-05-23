@@ -12,21 +12,27 @@ const SectionsComponent = () => {
   const location = useSelector(getPotentialRedirectLocation);
   console.log();
   return (
-    <Grid container>
+    <Grid container style={{ padding: "64px 0" }} spacing={4}>
       <HashRouter>
-        <ArrowNavigationComponent />
-        <Switch>
-          <Route
-            path={`/${location}`}
-            render={() => {
-              return <LayoutComponent />;
-            }}
-          />
-          <Route exact path="/">
-            <Redirect to="/opening" />
-          </Route>
-        </Switch>
-        <ArrowNavigationComponent />
+        <Grid item xs={12}>
+          <ArrowNavigationComponent />
+        </Grid>
+        <Grid item xs={12}>
+          <Switch>
+            <Route
+              path={`/${location}`}
+              render={() => {
+                return <LayoutComponent />;
+              }}
+            />
+            <Route exact path="/">
+              <Redirect to="/opening" />
+            </Route>
+          </Switch>
+        </Grid>
+        <Grid item xs={12}>
+          <ArrowNavigationComponent />
+        </Grid>
       </HashRouter>
     </Grid>
   );

@@ -27,16 +27,23 @@ const SinglePurchaseCardComponent = ({ data, handleClick }) => {
       onClick={handleClick}
       variant={variant}
       disabled={disabled}
+      style={{ padding: "24px 16px" }}
     >
       <Grid container spacing={4}>
         <Grid item xs={12}>
-          <Img
-            style={{ height: "250px" }}
-            key={src}
-            src={src}
-            loader={<CircularProgress />}
-            unloader={"Unable to Load Image"}
-          />
+          <Grid container justify="center">
+            <Img
+              style={{
+                height: "250px",
+                border: "1px solid white",
+                borderRadius: "12px",
+              }}
+              key={src}
+              src={src}
+              loader={<CircularProgress />}
+              unloader={"Unable to Load Image"}
+            />
+          </Grid>
         </Grid>
         <Grid item xs={12}>
           <TitleAndPointsComponent title={title} cost={cost} />

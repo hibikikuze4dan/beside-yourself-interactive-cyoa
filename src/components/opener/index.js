@@ -8,9 +8,11 @@ const OpenerComponent = () => {
   const title = useSelector(getLocationTitle);
   const description = useSelector(getLocationDescription);
   return (
-    <Grid container>
+    <Grid container spacing={4}>
       <Grid item xs={12}>
-        <Typography align="center">{title}</Typography>
+        <Typography align="center" variant="h4">
+          {title}
+        </Typography>
       </Grid>
       <Grid item xs={12}>
         <Typography align="center">

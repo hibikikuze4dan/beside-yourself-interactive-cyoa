@@ -5,7 +5,7 @@ const TitleAndPointsComponent = ({ title, cost }) => {
   return (
     <Grid container>
       <Grid item xs={cost !== 0 ? 8 : 12}>
-        <Typography>{title}</Typography>
+        <Typography align="center">{title}</Typography>
       </Grid>
       {cost !== 0 && (
         <Grid item xs={4}>
