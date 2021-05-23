@@ -5,11 +5,13 @@ const TitleAndPointsComponent = ({ title, cost }) => {
   return (
     <Grid container>
       <Grid item xs={cost !== 0 ? 8 : 12}>
-        <Typography align="center">{title}</Typography>
+        <Typography align="center" variant="h6">
+          {title}
+        </Typography>
       </Grid>
       {cost !== 0 && (
         <Grid item xs={4}>
-          <Typography>
+          <Typography variant="h6">
             {"Cost: "}
             {cost < 0 ? "+" : ""}
             {Math.abs(cost)}

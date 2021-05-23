@@ -15,7 +15,7 @@ const BreakdownDialogComponent = () => {
   const choicesForBreakdown = useSelector(getSelectedChoicesForBreakdown);
   return (
     <Dialog open={open} onClose={handleClose}>
-      <Grid container>
+      <Grid container spacing={4} style={{ padding: "24px" }}>
         {choicesForBreakdown.map(({ title, choices }) => {
           return (
             <Fragment key={`section-${title}-breakdown`}>

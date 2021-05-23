@@ -123,10 +123,16 @@ export const getCurrentPoints = createSelector(
   getSelectedChoicesCosts,
   (costs) => 50 - sum(costs)
 );
+
 export const getSelectedChoicesForLocation = createSelector(
   getLocation,
   getState,
   (location, state) => [...state[location]]
+);
+
+export const getSpecificChoiceFromLocation = createSelector(
+  getSelectedChoicesForLocation,
+  (choices) => (title) => choices.find((choice) => title === choice.title)
 );
 
 export const getSelectedChoicesForLocationTitles = createSelector(

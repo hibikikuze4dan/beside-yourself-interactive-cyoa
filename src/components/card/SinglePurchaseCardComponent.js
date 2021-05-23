@@ -50,7 +50,7 @@ const SinglePurchaseCardComponent = ({ data, handleClick }) => {
         </Grid>
         <RequirementsComponent choice={data} />
         <Grid item xs={12}>
-          <Typography>
+          <Typography style={{ textTransform: "none" }}>
             <Interweave content={description} />
           </Typography>
         </Grid>

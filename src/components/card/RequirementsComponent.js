@@ -10,7 +10,7 @@ const RequirementsComponent = ({ choice }) => {
 
   return willRender ? (
     <Grid item xs={12}>
-      <Typography>
+      <Typography align="center">
         {"Requires "}
         {isCloseAndPersonal ? cAndPCopy : include[0]}
       </Typography>

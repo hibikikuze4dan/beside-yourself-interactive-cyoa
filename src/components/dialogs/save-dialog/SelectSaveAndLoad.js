@@ -32,7 +32,9 @@ const SelectSaveAndLoadComponent = ({ onClose }) => {
   return (
     <Grid container justify="space-around">
       <FormControl className={classes.formControl}>
-        <InputLabel htmlFor="save-to-load">Save to Load</InputLabel>
+        <InputLabel color="primary" htmlFor="save-to-load">
+          Save to Load
+        </InputLabel>
         <Select
           native
           value={selectedSave}

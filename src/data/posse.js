@@ -1,5 +1,5 @@
 const posse = {
-  title: "Clone posse size",
+  title: "Clone Posse Size",
   description: "How many clones can you have out at any one time?",
   multi: false,
   choices: {

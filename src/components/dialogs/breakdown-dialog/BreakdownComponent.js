@@ -4,8 +4,8 @@ import React from "react";
 const BreakdownComponent = ({ title, choices }) => {
   return (
     <Grid container>
-      <Grid item xs={12}>
-        <Typography>{title}</Typography>
+      <Grid spacing={2} item xs={12}>
+        <Typography variant="h5">{title}:</Typography>
       </Grid>
       <Grid item xs={12}>
         <Typography>{choices.join(", ")}</Typography>

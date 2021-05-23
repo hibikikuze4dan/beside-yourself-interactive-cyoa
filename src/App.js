@@ -8,9 +8,44 @@ import SaveDialogComponent from "./components/dialogs/save-dialog";
 
 const theme = createMuiTheme({
   overrides: {
+    MuiFormLabel: {
+      root: {
+        color: "white",
+      },
+    },
+    MuiInput: {
+      root: {
+        color: "white",
+      },
+    },
+    MuiInputLabel: {
+      root: {
+        color: "white",
+      },
+    },
+    MuiFormControlLabel: {
+      root: {
+        color: "white",
+      },
+    },
     MuiButton: {
       root: {
         color: "white",
+        "&$disabled": {
+          color: "grey",
+        },
+      },
+      outlined: {
+        backgroundColor: "#1D3F5AFF",
+        "&:hover": {
+          backgroundColor: "#1D3F5AFF",
+        },
+      },
+      contained: {
+        backgroundColor: "#29a62a",
+        "&:hover": {
+          backgroundColor: "#29a62a",
+        },
       },
     },
     MuiPaper: {
@@ -19,7 +54,7 @@ const theme = createMuiTheme({
         backgroundColor: "#006466FF",
       },
       outlined: {
-        backgroundColor: "inherit",
+        backgroundColor: "#1D3F5AFF",
       },
     },
   },
