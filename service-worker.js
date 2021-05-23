@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/beside-yourself-interactive-cyoa/precache-manifest.7270212115c9b1baaf0b43e0f496195e.js"
+  "/beside-yourself-interactive-cyoa/precache-manifest.4f42f10cc196a83b8cf322d3ce2a9c5a.js"
 );
 
 self.addEventListener('message', (event) => {
